@@ -1,4 +1,12 @@
-PJM Electricity Load Forecasting
+
+# PJM Electricity Load Forecasting for Smart Grid Optimization
+
+**Author:** Kavya Sri Arroju  
+**Semester:** Spring 2026  
+**Prepared for:** UMBC Data Science Master Degree Capstone  
+**Instructor:** Dr. Chaojie (Jay) Wang  
+**GitHub Repository Link:**  
+https://github.com/KavyaSriArroju/UMBC-DATA606-Capstone
 
 ---
 
