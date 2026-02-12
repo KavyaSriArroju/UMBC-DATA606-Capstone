@@ -45,10 +45,14 @@ This project aims to answer the following research questions:
 
 Dataset Name: PJM Hourly Energy Consumption  
 Source: Kaggle (Public Domain – CC0 License)  
-Original Source: PJM Interconnection website  
+Original Source: PJM Interconnection website 
 
-File Used:
-- PJME_hourly.csv
+Dataset Link:  
+https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
+
+File Used:  
+PJME_hourly.csv
+
 ---
 
 ## Data Size
