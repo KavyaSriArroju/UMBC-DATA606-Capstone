@@ -1,6 +1,7 @@
 # 1. Title and Author
 
 **Project Title:** PJM Electricity Load Forecasting for Smart Grid Optimization
+
 **Author:** Kavya Sri Arroju  
 **Semester:** Spring 2026  
 **Prepared for:** UMBC Data Science Master Degree Capstone  
