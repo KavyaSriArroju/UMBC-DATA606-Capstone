@@ -1,6 +1,6 @@
+# 1. Title and Author
 
-# PJM Electricity Load Forecasting for Smart Grid Optimization
-
+**Project Title:** PJM Electricity Load Forecasting for Smart Grid Optimization
 **Author:** Kavya Sri Arroju  
 **Semester:** Spring 2026  
 **Prepared for:** UMBC Data Science Master Degree Capstone  
@@ -10,7 +10,7 @@ https://github.com/KavyaSriArroju/UMBC-DATA606-Capstone
 
 ---
 
-# 1. Background
+# 2. Background
 
 ## What is it about?
 This study looks at more than a million hours of historical power usage in the PJM East area to forecast future hourly electrical consumption in this region of the country. The PJM Interconnection is one of the largest RTOs in North America, operating the electrical system for numerous states. 
@@ -47,7 +47,7 @@ This project aims to answer the following research questions:
 5. How well can baseline regression or time-series models predict future electricity demand?
 
 
-# 2. Data
+# 3. Data
 
 ## Data Source
 
