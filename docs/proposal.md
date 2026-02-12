@@ -28,6 +28,17 @@ To help manage peak loads
 To facilitate the integration of renewable energy
 To create successful bidding strategies within the energy business.
 
+## Research Questions
+
+This project aims to answer the following research questions:
+
+1. What daily patterns exist in hourly electricity demand in the PJME region?
+2. Are there strong weekly or seasonal trends in electricity consumption?
+3. Which time-based features (hour of day, day of week, month) most influence electricity demand?
+4. Can historical hourly load data be used to build an accurate short-term electricity load forecasting model?
+5. How well can baseline regression or time-series models predict future electricity demand?
+
+
 # 2. Data
 
 ## Data Source
@@ -69,55 +80,38 @@ Rows: ~140,000
 Columns: 2  
 
 After feature engineering, additional columns will be created
+
 ## Data Dictionary
 
-### Column 1: Datetime
-- Data Type: Datetime (converted from string)
-- Definition: Timestamp representing a specific hour
-- Frequency: Hourly
-- Example: 2004-12-31 23:00:00
+### Column Names, Data Types, Definitions, and Potential Values
+
+| Column Name | Data Type | Definition | Potential Values |
+|-------------|----------|------------|------------------|
+| Datetime | Datetime | Timestamp representing one hour of electricity demand in the PJM East region | Hourly timestamps from 2002–2018 (e.g., 2015-07-01 13:00:00) |
+| PJME_MW | Numeric (Float/Integer) | Electricity load measured in megawatts (MW) for that hour | Continuous numeric values (approximately 10,000 – 60,000 MW) |
 
 ---
 
-### Column 2: PJME_MW
-- Data Type: Integer / Float
-- Definition: Electricity load in megawatts for that hour
-- Potential Values: Continuous numeric values (e.g., 10000 – 60000 MW range)
+### Target Variable (Label)
+
+The target variable in the machine learning model will be:
+
+**PJME_MW**
+
+This represents the hourly electricity demand that the forecasting model aims to predict.
 
 ---
 
-## Target Variable (Label)
+### Feature Variables (Predictors)
 
-The target variable for the ML model will be:
+The following variables will be used as predictors in the forecasting model.  
+These features will be engineered from the Datetime column:
 
-PJME_MW (Hourly electricity load)
+| Feature Name | Data Type | Description | Potential Values |
+|--------------|----------|------------|------------------|
+| hour | Integer | Hour extracted from Datetime | 0 – 23 |
+| dayofweek | Integer | Day of the week extracted from Datetime | 0 – 6 (0 = Monday, 6 = Sunday) |
+| month | Integer | Month extracted from Datetime | 1 – 12 |
+| year | Integer | Year extracted from Datetime | 2002 – 2018 |
+| is_weekend | Binary | Indicator variable for weekend | 0 = Weekday, 1 = Weekend |
 
-This is what we want to predict.
-
----
-
-## Features (Predictor Variables)
-
-From the Datetime column, the following features will be engineered:
-
-- Hour of day (0–23)
-- Day of week (0–6)
-- Month
-- Year
-- Is weekend (binary)
-- Seasonal indicators
-
-These time-based features will serve as predictors in forecasting models.
-
----
-
-## Modeling Approach
-
-The project will explore:
-
-- Baseline regression models
-- Time-series forecasting approaches
-- Performance evaluation using:
-  - RMSE
-  - MAE
-  - Visual comparison of predicted vs actual load
