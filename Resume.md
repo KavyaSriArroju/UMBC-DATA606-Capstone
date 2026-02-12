@@ -20,12 +20,6 @@ As a graduate student majoring in Data Science with practical experience with Py
 **Master of Professional Studies (M.P.S.) in Data Science**  
 Expected: December 2026  
 
-Relevant Coursework:
-- Data Visualization  
-- Machine Learning  
-- Big Data Analytics  
-- Communication for Data Scientists  
-
 ### Jawaharlal Nehru Technological University  
 **B.Tech. in Electronics and Communication Engineering**  
 2021  
