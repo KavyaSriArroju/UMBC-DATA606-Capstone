@@ -4,7 +4,7 @@
 
 **Author:** Kavya Sri Arroju  
 
-**Semester:** Fall 2025  
+**Semester:** Spring 2026  
 
 **Prepared for:** UMBC Data Science Master Degree Capstone  
 Dr. Chaojie (Jay) Wang  
