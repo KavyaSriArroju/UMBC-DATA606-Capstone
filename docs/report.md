@@ -22,22 +22,21 @@
 
 # 2. Background
 
-Electricity demand forecasting is an important problem in energy management and smart grid systems. Power companies need accurate predictions of electricity consumption in order to balance electricity generation and demand efficiently. Incorrect predictions may lead to higher operational costs, energy wastage, or even power outages.
+Forecasting electricity demand is a crucial issue in energy management and smart grid systems. Power companies are required to have accurate forecasts of electricity consumption to be able to efficiently balance the generation and demand for electricity. Inaccurate forecasts may result in increased operational costs, waste of energy, and the potential for interruptions in service.
 
-Electricity usage changes continuously throughout the day depending on human activities, weather conditions, seasonal effects, and industrial operations. Because of these changing patterns, forecasting electricity demand becomes a complex time-series prediction problem.
+Electricity demand is continuously changing during the day due to human activities, weather conditions, a variety of seasonal effects, and industrial processes. Therefore, due to these changing patterns, predicting electricity demand becomes a complex forecasting problem that can be treated as a time-series prediction problem.
 
-The goal of this project is to use machine learning techniques to predict hourly electricity demand using historical electricity load data from the PJM Interconnection region in the United States. In addition to prediction modeling, an interactive Streamlit dashboard was developed for visualization and monitoring of electricity demand patterns and prediction results.
-
+The purpose of this project is to predict hourly electricity demand by using machine learning approaches to analyze historical electricity load data from the PJM Interconnection region of the U.S. Another product of this project is a Streamlit dashboard for users to visualize electricity demand patterns and make real-time predictions.
 ---
 
 # 3. Data Sources
 
-The dataset used in this project is the **PJM Hourly Energy Consumption Dataset** obtained from Kaggle.
+The data used in this project is the PJM Hourly Energy Consumption Dataset from Kaggle. 
 
 Dataset Source:  
 https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
 
-The dataset contains hourly electricity load data collected from the PJM Interconnection power grid region. The data spans from approximately 2002 to 2018 and contains around 145,000 observations.
+This hourly energy consumption dataset reports on the hourly energy consumption data (electricity load) from the PJM Interconnection region of the U.S. The hourly energy consumption dataset consists of approximately 145,000 observations that cover roughly from 2002 to 2018.
 
 The original dataset file used in this project is:
 
@@ -45,7 +44,8 @@ The original dataset file used in this project is:
 PJME_hourly.csv
 ```
 
-The processed feature-engineered dataset was also created for modeling purposes.
+A dataset featuring information engineered was outputted to be available for modeling.
+
 ---
 
 # 4. Data Elements
@@ -56,7 +56,7 @@ The target variable used in this project is:
 |---|---|
 | PJME_MW | Hourly electricity demand measured in megawatts |
 
-Several additional features were created during feature engineering to improve model performance.
+During the process of feature engineering, additional features were generated with the intention of enhancing the effectiveness of the model.
 
 ## Time-Based Features
 
@@ -84,65 +84,65 @@ Several additional features were created during feature engineering to improve m
 - month_sin
 - month_cos
 
-These engineered features helped the machine learning models better understand repeating time-series patterns.
+By assisting the machine learning model in identifying repeating patterns of time-series, the engineered features ultimately improved machine learning model learning capability.
 
 ---
 
 # 5. Exploratory Data Analysis (EDA)
 
-Exploratory data analysis was performed to understand electricity demand behavior and identify trends and patterns in the dataset.
+In order to gain an understanding of electricity demand behaviour, exploratory data analysis was used and to assist with the identification of trends and patterns noted within the dataset.
 
-Several visualizations were created to analyze hourly, daily, weekly, and monthly electricity demand patterns.
+A number of visualisations were produced for the purpose of analysing electricity demand patterns at an hourly, daily, weekly and monthly level.
 
 ## Key Findings from EDA
 
 ### Hourly Trends
 
-Electricity demand generally increases during daytime and evening hours and decreases late at night.
+Electricity demand will typically rise during daylight hours and evenings but will drop late evening.
 
 ### Weekly Patterns
 
-Electricity usage tends to be higher during weekdays compared to weekends.
+Electricity will generally be consumed more on weekdays as opposed to weekends.
 
 ### Seasonal Patterns
 
-Demand varies across months and seasons because of weather and human activities.
+Demand can vary throughout a month and seasonally due to both climatic and human conversion reasons.
 
 ### Time-Series Behavior
 
-The dataset shows strong repeating patterns and cyclical trends suitable for time-series forecasting.
+The provided dataset contained evidence of strong repeating and cyclic trends that were typical for time-series forecasting.
 
 ---
 
 # 6. Feature Engineering
 
-Feature engineering was one of the most important steps in this project.
+The feature engineering performed was one of the most critical components of the entire project.
 
-Several new features were created from the datetime column to improve prediction accuracy.
+The date/time column produced a number of new features used to produce more accurate predictions.
 
-Time-based features such as hour, day, month, and year were extracted from the timestamp.
+The date/time column contained extracted time based features i.e., hour, day, month, year.
 
-Lag features were created using previous electricity demand values to capture historical trends.
+Time lagged features were created using the previous period of electricity demand to capture historical trends versus current trends.
 
-Rolling averages and rolling standard deviation features were also added to smooth fluctuations.
+Rolling averages and rolling standard deviations were also added to smooth fluctuating demand levels.
 
-These engineered features significantly improved model performance.
+These engineered features greatly enhanced the effectiveness of the models.
 
 ---
 
 # 7. Machine Learning Models
 
-Two machine learning models were implemented and compared in this project.
+In this project, two machine learning models were evaluated and compared against one another.
 
 ## Linear Regression
 
-Linear Regression was used as the baseline model because it is simple and interpretable.
+The baseline model that was selected is called Linear Regression; this type of model is relatively simple and therefore easy to interpret and explain.
 
 ## Random Forest Regressor
 
-Random Forest was used as the advanced model because it captures complex and non-linear relationships effectively.
+The second model that was selected was Random Forest. This particular Machine Learning modeling approach has been shown to be extremely effective at modeling complex and non-linear relationships.
 
-The dataset was split into training and testing sets using a time-based split approach.
+To evaluate and compare the two models, the dataset was split into two sets using a "time-based" split approach; thus, one set of data was used to build each model while the second set was used to test the performance of each model.
 
 ---
 
@@ -163,21 +163,21 @@ The following evaluation metrics were used to compare model performance:
 | Linear Regression | 777.97 | 994.14 | 0.9765 |
 | Random Forest | 286.93 | 396.38 | 0.9963 |
 
-The Random Forest model achieved significantly better performance compared to Linear Regression.
+The results, when comparing model performance, indicated that the Random Forest Model outperformed the Linear Regression Model by a significant margin.
 
 ---
 
 # 9. Actual vs Predicted Results
 
-An actual versus predicted graph was generated to compare real electricity demand values with model predictions.
+An "Actual vs. Predicted" graph was created to demonstrate the relationship between the actual values of electricity demand and those predicted by the model.
 
-The predicted values closely followed the actual electricity demand trends and fluctuations, showing strong model accuracy.
+Comparing the predicted values to the actual electricity demand values indicated that there was a strong level of model performance, with the predicted values closely following the actual demand trends and fluctuations.
 
 ---
 
 # 10. Streamlit Dashboard
 
-An interactive dashboard was developed using Streamlit to make the project more practical and user-friendly.
+Streamlit was utilized to create an interactive dashboard that added practical value to the project as well as created an easy-to-use and friendly experience for project users.
 
 The dashboard allows users to:
 
@@ -187,36 +187,36 @@ The dashboard allows users to:
 - View prediction graphs
 - Monitor electricity demand status
 
-The dashboard also includes a demand status indicator that classifies electricity usage as low, normal, high, or critical.
+Finally, the interactive dashboard indicates the status of electricity usage, therefore classifying the electricity consumption as either Low, Normal, High or Critical.
 
-This interactive component improves the usability and presentation of the project.
+This type of user interactivity not only enhances the usability of the project, but also dramatically improves the presentation of the project.
 
 ---
 
 # 11. Conclusion
 
-This project successfully demonstrated the use of machine learning for electricity load forecasting.
+Machine learning was used effectively in this project to predict future electric demand. 
 
-Exploratory data analysis revealed strong temporal and seasonal patterns in electricity demand.
+By analysing electric demand data, it was found that there are recurring seasonal and temporal trends.
 
-Feature engineering significantly improved prediction accuracy.
+The accuracy of the model predictions improved by feature engineering.
 
-Among the models tested, Random Forest achieved the best performance because it effectively captured complex and non-linear relationships.
+Random Forest produced the best results of all the models tested, because it was successful in detecting more complicated and nonlinear patterns in the data.
 
-The project also included an interactive Streamlit dashboard for visualization and monitoring purposes.
+An interactive dashboard created using Streamlit was also developed as a means for monitoring and visualising electric usage.
 
 ---
 
 # 12. Limitations
 
-Although the project achieved strong prediction performance, several limitations exist.
+Despite the strong predictive success of the models there are limitations in the project, which include: 
 
-- Weather data was not included
-- Holiday information was not incorporated
-- Only two models were compared
-- Real-time API integration was not implemented
+- not including the use of weather data
+- not including any information regarding holidays
+- only testing two models; and not implementing real-time APIs.
 
-These limitations provide opportunities for future improvements.
+These limitations present opportunities for future improvements to be made.
+
 
 ---
 
