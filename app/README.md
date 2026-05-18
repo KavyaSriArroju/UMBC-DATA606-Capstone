@@ -6,13 +6,6 @@ The dashboard was created using Streamlit to provide an interactive and user-fri
 
 ---
 
-## Files Included
-
-- `streamlit_app.py` – Main Streamlit dashboard application  
-- `requirements.txt` – Required Python libraries for running the dashboard  
-
----
-
 ## Dashboard Features
 
 - Upload processed dataset
