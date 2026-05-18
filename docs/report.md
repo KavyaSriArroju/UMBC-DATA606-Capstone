@@ -40,10 +40,6 @@ The original dataset file used in this project is:
 
 ```text
 PJME_hourly.csv
-The original dataset file used in this project is:
-
-```text
-PJME_hourly.csv
 ```
 
 The processed feature-engineered dataset was also created for modeling purposes.
