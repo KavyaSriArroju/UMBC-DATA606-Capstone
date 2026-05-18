@@ -1,8 +1,6 @@
 # Streamlit Dashboard
 
-This folder contains the Streamlit dashboard application developed for the PJM Electricity Load Forecasting project.
-
-The dashboard was created using Streamlit to provide an interactive and user-friendly interface for electricity demand analysis, prediction visualization, and model comparison.
+The Streamlit dashboard application developed for the PJM Electricity Load Forecasting project can be found inside this directory. We utilized Streamlit to provide an easy-to-use interface for analyzing electricity demand, showing how predicted demand looks compared to the actual demand along with also giving a model comparison of machine learning.
 
 ---
 
@@ -36,4 +34,4 @@ http://localhost:8501
 
 ## Dashboard Purpose
 
-The dashboard was developed to make electricity load forecasting results easier to visualize and analyze in a practical way. It provides interactive monitoring of electricity demand patterns and prediction outputs generated using machine learning models.
+The dashboard was created to improve the experience of visualizing and analysing the results of an electricity load forecast in a practical way. This application allows interactive monitoring of electricity demand trends and predictions to aid in evaluating the output from different types of machine learning models.
