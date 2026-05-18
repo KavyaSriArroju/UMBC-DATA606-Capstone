@@ -18,17 +18,6 @@ The dashboard was created using Streamlit to provide an interactive and user-fri
 
 ---
 
-## Technologies Used
-
-- Streamlit
-- Pandas
-- NumPy
-- Matplotlib
-- Plotly
-- Scikit-learn
-
----
-
 ## How to Run the Dashboard
 
 Open terminal in this folder and run:
