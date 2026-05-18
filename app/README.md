@@ -1,4 +1,4 @@
----
+
 
 # app/README.md
 
@@ -26,4 +26,3 @@ Open terminal in this folder and run:
 
 ```bash
 streamlit run app.py
-```
