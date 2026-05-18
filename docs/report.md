@@ -27,6 +27,7 @@ Forecasting electricity demand is a crucial issue in energy management and smart
 Electricity demand is continuously changing during the day due to human activities, weather conditions, a variety of seasonal effects, and industrial processes. Therefore, due to these changing patterns, predicting electricity demand becomes a complex forecasting problem that can be treated as a time-series prediction problem.
 
 The purpose of this project is to predict hourly electricity demand by using machine learning approaches to analyze historical electricity load data from the PJM Interconnection region of the U.S. Another product of this project is a Streamlit dashboard for users to visualize electricity demand patterns and make real-time predictions.
+
 ---
 
 # 3. Data Sources
