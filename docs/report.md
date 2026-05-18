@@ -13,7 +13,7 @@
 - **Presentation Video (YouTube):**  
 [https://www.youtube.com/watch?v=hBpBQHxgnKY]
 - **Final PPT Presentation:**  
-  [Add Your PPT GitHub Link Here]
+  [https://github.com/KavyaSriArroju/UMBC-DATA606-Capstone/blob/main/docs/Capstone_Presentation.pptx]
 
 ---
 
