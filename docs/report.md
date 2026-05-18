@@ -1,7 +1,10 @@
-# PJM Electricity Load Forecasting using Machine Learning
+# 1. Title and Author
 
-**Kavya Sri Arroju**  
-**DATA 606 Capstone Project – Spring 2026**
+- **Project Title** – PJM Electricity Load Forecasting using Machine Learning  
+- **Author** – Kavya Sri Arroju  
+- **Semester** – Spring '26  
+- **Prepared for** – UMBC Data Science Master Degree Capstone
+- **Instructor** – Dr. Chaojie Wang
 
 ---
 
@@ -17,7 +20,7 @@
 
 ---
 
-# Background
+# 2. Background
 
 Electricity demand forecasting is an important problem in energy management and smart grid systems. Power companies need accurate predictions of electricity consumption in order to balance electricity generation and demand efficiently. Incorrect predictions may lead to higher operational costs, energy wastage, or even power outages.
 
@@ -27,7 +30,7 @@ The goal of this project is to use machine learning techniques to predict hourly
 
 ---
 
-# Data Sources
+# 3. Data Sources
 
 The dataset used in this project is the **PJM Hourly Energy Consumption Dataset** obtained from Kaggle.
 
@@ -45,7 +48,7 @@ PJME_hourly.csv
 The processed feature-engineered dataset was also created for modeling purposes.
 ---
 
-# Data Elements
+# 4. Data Elements
 
 The target variable used in this project is:
 
@@ -85,7 +88,7 @@ These engineered features helped the machine learning models better understand r
 
 ---
 
-# Exploratory Data Analysis (EDA)
+# 5. Exploratory Data Analysis (EDA)
 
 Exploratory data analysis was performed to understand electricity demand behavior and identify trends and patterns in the dataset.
 
@@ -111,7 +114,7 @@ The dataset shows strong repeating patterns and cyclical trends suitable for tim
 
 ---
 
-# Feature Engineering
+# 6. Feature Engineering
 
 Feature engineering was one of the most important steps in this project.
 
@@ -127,7 +130,7 @@ These engineered features significantly improved model performance.
 
 ---
 
-# Machine Learning Models
+# 7. Machine Learning Models
 
 Two machine learning models were implemented and compared in this project.
 
@@ -143,7 +146,7 @@ The dataset was split into training and testing sets using a time-based split ap
 
 ---
 
-# Model Evaluation
+# 8. Model Evaluation
 
 The following evaluation metrics were used to compare model performance:
 
@@ -164,7 +167,7 @@ The Random Forest model achieved significantly better performance compared to Li
 
 ---
 
-# Actual vs Predicted Results
+# 9. Actual vs Predicted Results
 
 An actual versus predicted graph was generated to compare real electricity demand values with model predictions.
 
@@ -172,7 +175,7 @@ The predicted values closely followed the actual electricity demand trends and f
 
 ---
 
-# Streamlit Dashboard
+# 10. Streamlit Dashboard
 
 An interactive dashboard was developed using Streamlit to make the project more practical and user-friendly.
 
@@ -190,7 +193,7 @@ This interactive component improves the usability and presentation of the projec
 
 ---
 
-# Conclusion
+# 11. Conclusion
 
 This project successfully demonstrated the use of machine learning for electricity load forecasting.
 
@@ -204,7 +207,7 @@ The project also included an interactive Streamlit dashboard for visualization a
 
 ---
 
-# Limitations
+# 12. Limitations
 
 Although the project achieved strong prediction performance, several limitations exist.
 
@@ -217,7 +220,7 @@ These limitations provide opportunities for future improvements.
 
 ---
 
-# Future Research Directions
+# 13. Future Research Directions
 
 Several improvements can be explored in future work.
 
@@ -231,7 +234,7 @@ These improvements can help build a more advanced and production-ready forecasti
 
 ---
 
-# References
+# 14. References
 
 1. Kaggle – PJM Hourly Energy Consumption Dataset  
 https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
